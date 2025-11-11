@@ -1,0 +1,23 @@
+{
+  "name": "@code-tcm/manifesto",
+  "version": "0.1.0",
+  "description": "Traditional Chinese Medicine for Code Health - Core Manifesto",
+  "main": "src/index.ts",
+  "scripts": {
+    "diagnose": "ts-node src/cli/diagnose.ts",
+    "build": "tsc",
+    "test": "jest",
+    "balance": "ts-node src/rituals/balance-check.ts"
+  },
+  "keywords": ["tcm", "code-health", "five-elements", "software-architecture"],
+  "author": "Code TCM Masters",
+  "license": "MIT",
+  "dependencies": {
+    "typescript": "^5.0.0",
+    "ts-node": "^10.9.0"
+  },
+  "devDependencies": {
+    "@types/node": "^20.0.0",
+    "jest": "^29.0.0"
+  }
+}
