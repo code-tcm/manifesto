@@ -1,0 +1,11 @@
+name: TCM Code Health Check
+on: [push, pull_request]
+
+jobs:
+  tcm-analysis:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - uses: actions/setup-node@v3
+      - run: npm install -g @code-tcm/core
+      - run: tcm-diagnose diagnose . --lang=en
